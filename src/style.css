@@ -1,0 +1,150 @@
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  background-color: #ddd0c8;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: rgb(153, 117, 76);
+  padding: 24px;
+  font-size: 40px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+#headerButton,
+#removeLibrary {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+#removeLibrary {
+  background-color: #ffd8d8;
+  border-color: #ffd8d8;
+}
+
+.searchBarCon {
+  margin-left: -140px;
+}
+
+.searchBarCon > label {
+  font-size: 18px;
+  color: black;
+}
+#searchBar {
+  width: 400px;
+}
+
+#searchDialog {
+  min-width: 500px;
+  max-width: 1200px;
+}
+
+#closeDialog {
+  text-align: end;
+  margin-bottom: 5px;
+}
+
+#searchResults {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 25px;
+  padding: 50px;
+}
+
+#bookForm,
+#changeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#bookForm > p,
+#changeForm > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.checkboxContainer {
+  display: flex;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px 0px 5px 0px;
+}
+
+.card .author {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.card .numPages {
+  padding-bottom: 15px;
+  border-bottom-style: ridge;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 24px 40px 24px 20px;
+  border-radius: 5px;
+  box-shadow: inset 0.5em 0em rgb(228, 194, 0), 3px 3px 10px gray;
+  height: 190px;
+}
+
+.readButton,
+.deleteButton,
+.changeButton {
+  background-color: #72c095;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 85px;
+}
+
+.readButton:hover,
+.deleteButton:hover,
+.changeButton:hover {
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: #fa556b;
+  margin-left: 10px;
+}
+
+.changeButton {
+  background-color: #61b8ff;
+  margin-left: 10px;
+}
+
+.completed {
+  border-top-style: ridge;
+  padding-top: 10px;
+}
+
+.footer {
+  background-color: rgb(163, 136, 86);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  color: white;
+  margin-top: auto;
+}
